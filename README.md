@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I hands-on like [this](https://www.digitalocean.com/community/tutorials/build-a-restful-json-api-with-rails-5-part-one)
 
-Things you may want to cover:
+## API Endpoints
 
-* Ruby version
+Our API will expose the following RESTful endpoints.
 
-* System dependencies
+| Endpoint | Functionality                          |
+| -------- | -------------------------------------- |
+| POST     | /signup Signup                         |
+| POST     | /auth/login Login                      |
+| GET      | /auth/logout Logout                    |
+| GET      | /todos List all todos                  |
+| POST     | /todos Create a new todo               |
+| GET      | /todos/:id Get a todo                  |
+| PUT      | /todos/:id Update a todo               |
+| DELETE   | /todos/:id Delete a todo and its items |
+| GET      | /todos/:id/items Get a todo item       |
+| PUT      | /todos/:id/items Update a todo item    |
+| DELETE   | /todos/:id/items Delete a todo item    |
 
-* Configuration
+## Prerequisites
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails 6
